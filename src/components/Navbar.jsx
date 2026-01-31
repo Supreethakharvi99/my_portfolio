@@ -7,7 +7,7 @@ const Navbar = () => {
         <ul className="flex gap-6 sm-gap-6 text-sm sm:text-base text-gray-700">
           <li>
             <a
-              href="/Supreetha_kharvi_SK.pdf"
+              href="/Supreetha_Kharvi_Resume.pdf"
               download
               className="hover:text-black"
             >

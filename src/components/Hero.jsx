@@ -15,7 +15,7 @@ const Hero = () => {
 
         <div className="mt-6 flex gap-4">
           <a
-            href="/Supreetha_kharvi_SK.pdf"
+            href="/Supreetha_Kharvi_Resume.pdf"
             download
             className="px-6 py-2 bg-black text-white rounded transition hover:scale-105"
           >
