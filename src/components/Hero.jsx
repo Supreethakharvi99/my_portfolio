@@ -16,12 +16,11 @@ const Hero = () => {
         <div className="mt-6 flex gap-4">
           <a
             href='https://drive.google.com/file/d/1g2pfmHWJCheZcJ96fYWXhaIgFXdxaO2T/view?usp=drive_link'
-            download="Supreetha_kharvi_SK.pdf"
              target="_blank"
               rel="noreferrer"
             className="px-6 py-2 bg-black text-white rounded transition hover:scale-105"
           >
-            Download Resume
+            View Resume
           </a>
 
           <a

@@ -4,11 +4,10 @@ const Navbar = () => {
       <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 className="font-bold text-lg">Supreetha</h1>
 
-        <ul className="flex gap-4 sm-gap-6 text-sm sm:text-base text-gray-700">
+        <ul className="flex gap-4 sm:gap-6 text-sm sm:text-base text-gray-700">
           <li>
             <a
             href='https://drive.google.com/file/d/1g2pfmHWJCheZcJ96fYWXhaIgFXdxaO2T/view?usp=drive_link'
-            download="Supreetha_kharvi_SK.pdf"
               target="_blank"
               rel="noreferrer"
               className="hover:text-black"
