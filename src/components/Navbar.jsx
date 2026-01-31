@@ -4,7 +4,7 @@ const Navbar = () => {
       <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 className="font-bold text-lg">Supreetha</h1>
 
-        <ul className="flex gap-6 sm-gap-6 text-sm sm:text-base text-gray-700">
+        <ul className="flex gap-4 sm-gap-6 text-sm sm:text-base text-gray-700">
           <li>
             <a
               href="/Supreetha_Kharvi_Resume.pdf"
