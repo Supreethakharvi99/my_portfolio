@@ -7,8 +7,10 @@ const Navbar = () => {
         <ul className="flex gap-4 sm-gap-6 text-sm sm:text-base text-gray-700">
           <li>
             <a
-              href="/Supreetha_Kharvi_Resume.pdf"
-              download
+            href='https://drive.google.com/file/d/1g2pfmHWJCheZcJ96fYWXhaIgFXdxaO2T/view?usp=drive_link'
+            download="Supreetha_kharvi_SK.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="hover:text-black"
             >
               Resume

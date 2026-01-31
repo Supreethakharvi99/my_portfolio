@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <div>
       <section 
-      className="min-h-screen pt-24 flex flex-col items-center justify-center text-center px-4 
-      bg-gradient-to-br from-indigo-50 via-white to-pink-50">
+      className="min-h-screen pt-24 flex flex-col items-center justify-center text-center px-4 gap-6
+      bg-gradient-to-br from-indigo-600 via-white to-pink-50">
 
         <h1 className="text-4xl md:text-5xl font-bold text-indigo-600">Supreetha Kharvi</h1>
 
@@ -15,8 +15,10 @@ const Hero = () => {
 
         <div className="mt-6 flex gap-4">
           <a
-            href="/Supreetha_Kharvi_Resume.pdf"
-            download
+            href='https://drive.google.com/file/d/1g2pfmHWJCheZcJ96fYWXhaIgFXdxaO2T/view?usp=drive_link'
+            download="Supreetha_kharvi_SK.pdf"
+             target="_blank"
+              rel="noreferrer"
             className="px-6 py-2 bg-black text-white rounded transition hover:scale-105"
           >
             Download Resume
