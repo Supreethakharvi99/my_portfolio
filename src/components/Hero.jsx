@@ -23,7 +23,7 @@ const Hero = () => {
       {/* Buttons */}
       <div className="mt-6 flex gap-5 flex-wrap justify-center">
         <a
-          href="https://drive.google.com/file/d/1I9guo_nno3BtbHjdBO1igManLyGvgoGx/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1pRjugIXnWmaQXS-k8-YLchRg9YjG4ZdI/view?usp=drive_link"
           target="_blank"
           rel="noreferrer"
           className="px-7 py-3 rounded-xl 

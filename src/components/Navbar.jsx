@@ -16,7 +16,7 @@ const Navbar = () => {
         <ul className="flex gap-4 sm:gap-6 text-sm sm:text-base text-gray-300">
           <li>
             <a
-              href="https://drive.google.com/file/d/1I9guo_nno3BtbHjdBO1igManLyGvgoGx/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1pRjugIXnWmaQXS-k8-YLchRg9YjG4ZdI/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
               className="hover:text-indigo-400 transition-colors"
