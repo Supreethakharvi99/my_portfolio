@@ -2,37 +2,49 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div>
-      <section 
-      className="min-h-screen pt-24 flex flex-col items-center justify-center text-center px-4 gap-6
-      bg-gradient-to-br from-indigo-600 via-white to-pink-50">
+    <section
+      className="min-h-screen pt-32 flex flex-col items-center justify-center 
+      text-center px-4 gap-8
+      bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-950"
+    >
+      {/* Name */}
+      <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+        Supreetha Kharvi
+      </h1>
 
-        <h1 className="text-4xl md:text-5xl font-bold text-indigo-600">Supreetha Kharvi</h1>
+      {/* Subtitle */}
+      <p className="max-w-2xl text-lg md:text-xl text-gray-300 leading-relaxed">
+        Frontend Developer crafting modern, scalable user interfaces using{" "}
+        <span className="text-indigo-300 font-medium">React</span>,{" "}
+        <span className="text-indigo-300 font-medium">Redux Toolkit</span>, and{" "}
+        <span className="text-indigo-300 font-medium">Tailwind CSS</span>
+      </p>
 
-        <p className="mt-4 text-lg md:text-xl text-gray-700">
-          Frontend Developer | React | Redux | Tailwind CSS
-        </p>
+      {/* Buttons */}
+      <div className="mt-6 flex gap-5 flex-wrap justify-center">
+        <a
+          href="https://drive.google.com/file/d/1I9guo_nno3BtbHjdBO1igManLyGvgoGx/view?usp=drive_link"
+          target="_blank"
+          rel="noreferrer"
+          className="px-7 py-3 rounded-xl 
+          bg-indigo-600/90 text-white font-medium
+          hover:bg-indigo-500 hover:shadow-xl hover:scale-105
+          transition-all duration-300"
+        >
+          View Resume
+        </a>
 
-        <div className="mt-6 flex gap-4">
-          <a
-            href='https://drive.google.com/file/d/1I9guo_nno3BtbHjdBO1igManLyGvgoGx/view?usp=drive_link'
-            
-             target="_blank"
-              rel="noreferrer"
-            className="px-6 py-2 bg-black text-white rounded transition hover:scale-105"
-          >
-            View Resume
-          </a>
-
-          <a
-            href="#contact"
-            className="px-6 py-2 border border-black rounded transition  hover:bg-gray-100"
-          >
-            Contact
-          </a>
-        </div>
-      </section>
-    </div>
+        <a
+          href="#contact"
+          className="px-7 py-3 rounded-xl 
+          border border-white/20 text-gray-200 font-medium
+          hover:bg-white/10 hover:scale-105
+          transition-all duration-300"
+        >
+          Contact Me
+        </a>
+      </div>
+    </section>
   );
 };
 
