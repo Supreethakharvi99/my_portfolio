@@ -6,28 +6,69 @@ import {
   FaCss3Alt,
   FaGitAlt,
   FaGithub,
+  FaNodeJs,
 } from "react-icons/fa";
-import { SiRedux, SiTailwindcss, SiVercel, SiFirebase, SiJest } from "react-icons/si";
+import {
+  SiRedux,
+  SiTailwindcss,
+  SiJest,
+  SiGraphql,
+  SiWebpack,
+  SiBabel,
+  SiJira,
+  SiVercel,
+} from "react-icons/si";
 import { TbBrandCypress } from "react-icons/tb";
+import { MdApi, MdSecurity } from "react-icons/md";
+import { DiMysql } from "react-icons/di";
+import { FaAws } from "react-icons/fa";
+
 
 const skills = {
-  Frontend: [
-    { name: "React", icon: <FaReact className="text-sky-400" /> },
-    { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
-    { name: "Redux Toolkit", icon: <SiRedux className="text-purple-400" /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
+  "Frontend Development": [
+    { name: "React.js", icon: <FaReact className="text-sky-400" /> },
+    { name: "JavaScript (ES6+)", icon: <FaJs className="text-yellow-400" /> },
     { name: "HTML5", icon: <FaHtml5 className="text-orange-500" /> },
     { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
+    { name: "Redux Toolkit", icon: <SiRedux className="text-purple-400" /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
   ],
-  Tools: [
-    { name: "Git", icon: <FaGitAlt className="text-orange-400" /> },
-    { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
-    { name: "Vercel", icon: <SiVercel className="text-white" /> },
-    { name: "Firebase", icon: <SiFirebase className="text-yellow-400" /> },
+
+  "API & Data Handling": [
+    { name: "REST APIs", icon: <MdApi className="text-green-400" /> },
+    { name: "GraphQL", icon: <SiGraphql className="text-pink-400" /> },
+    { name: "API Integration", icon: <MdApi className="text-indigo-400" /> },
+    { name: "JWT Authentication", icon: <MdSecurity className="text-red-400" /> },
   ],
+
   Testing: [
     { name: "Jest", icon: <SiJest className="text-red-400" /> },
     { name: "Cypress", icon: <TbBrandCypress className="text-emerald-400" /> },
+    { name: "React Testing Library", icon: <SiJest className="text-pink-300" /> },
+  ],
+
+  "Backend (Working Knowledge)": [
+    { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+    { name: "Express.js", icon: <FaNodeJs className="text-gray-300" /> },
+  ],
+
+  Databases: [
+    { name: "SQL", icon: <DiMysql className="text-blue-400" /> },
+    { name: "Oracle SQL", icon: <DiMysql className="text-red-400" /> },
+  ],
+
+  "Tools & DevOps": [
+    { name: "Git", icon: <FaGitAlt className="text-orange-400" /> },
+    { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
+    { name: "Webpack", icon: <SiWebpack className="text-blue-400" /> },
+    { name: "Babel", icon: <SiBabel className="text-yellow-400" /> },
+    { name: "Jira", icon: <SiJira className="text-blue-500" /> },
+  ],
+
+  "Cloud & Deployment": [
+    
+    { name: "AWS (Basic)", icon: <FaAws className="text-orange-400" /> },
+    { name: "Vercel", icon: <SiVercel className="text-white" /> },
   ],
 };
 
@@ -37,28 +78,21 @@ const Skills = () => {
       id="skills"
       className="py-24 bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-900"
     >
-      <div className="max-w-6xl mx-auto px-4">
-        {/* Heading */}
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-extrabold text-center text-white">
           Skills
         </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-indigo-400 to-pink-400 mx-auto mt-4 rounded-full"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-indigo-400 to-pink-400 mx-auto mt-4 rounded-full" />
 
-        {/* Skill Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mt-14">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {Object.entries(skills).map(([category, items]) => (
             <div
               key={category}
-              className="group relative bg-white/10 backdrop-blur-xl
+              className="bg-white/10 backdrop-blur-xl
               border border-white/20 rounded-2xl p-6
-              transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl"
             >
-              {/* Glow */}
-              <div className="absolute inset-0 rounded-2xl 
-              border border-transparent 
-              group-hover:border-indigo-400/40 transition"></div>
-
-              <h3 className="text-xl font-semibold text-indigo-300 mb-5">
+              <h3 className="text-lg font-semibold text-indigo-300 mb-5">
                 {category}
               </h3>
 
