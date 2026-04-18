@@ -10,10 +10,10 @@ const projects = [
   {
     title: "Movie Ticket Booking App (MERN)",
     description:
-      "A full-stack movie ticket booking application built using the MERN stack. Users can browse movies, view show timings, and book tickets. Currently under active development.",
+      "A full-stack movie ticket booking application built using the MERN stack. Users can browse movies, view show timings, and book tickets.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     github: "https://github.com/Supreethakharvi99/Quick-Show-app-MERN",
-    live: "In Progress",
+    live: "#",
   },
   {
     title: "Personal Portfolio Website",
@@ -32,7 +32,6 @@ const Projects = () => {
       className="py-24 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900"
     >
       <div className="max-w-6xl mx-auto px-4">
-        
         {/* Heading */}
         <h2 className="text-4xl font-extrabold text-center text-white">
           Projects
@@ -44,31 +43,15 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group relative 
-              bg-white/10 backdrop-blur-xl
-              border border-white/20
-              rounded-2xl p-6
-              transition-all duration-300
-              hover:-translate-y-2 hover:shadow-2xl"
+              className="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
             >
               {/* Glow */}
-              <div className="absolute inset-0 rounded-2xl 
-              border border-transparent 
-              group-hover:border-indigo-400/40 transition"></div>
+              <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-indigo-400/40 transition"></div>
 
               {/* Header */}
-              <div className="flex items-start justify-between">
-                <h3 className="text-xl font-semibold text-white">
-                  {project.title}
-                </h3>
-
-                {project.live === "In Progress" && (
-                  <span className="text-xs px-3 py-1 rounded-full 
-                  bg-yellow-500/20 text-yellow-300 font-medium">
-                    In Progress
-                  </span>
-                )}
-              </div>
+              <h3 className="text-xl font-semibold text-white">
+                {project.title}
+              </h3>
 
               {/* Description */}
               <p className="text-gray-300 mt-4 leading-relaxed">
@@ -80,8 +63,7 @@ const Projects = () => {
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs px-3 py-1 rounded-full
-                    bg-indigo-500/20 text-indigo-300"
+                    className="text-xs px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300"
                   >
                     {tech}
                   </span>
@@ -98,17 +80,6 @@ const Projects = () => {
                 >
                   GitHub →
                 </a>
-
-                {project.live !== "In Progress" && project.live !== "#" && (
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-indigo-400 hover:text-indigo-300"
-                  >
-                    Live Demo →
-                  </a>
-                )}
               </div>
             </div>
           ))}
