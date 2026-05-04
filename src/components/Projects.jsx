@@ -21,13 +21,13 @@ const projects = [
     "Currently building 30 mini JavaScript projects to strengthen core frontend skills including DOM manipulation, event handling, API integration, local storage, and UI interactions. Completed 10 projects so far.",
   tech: ["JavaScript", "HTML", "CSS"],
   github: "https://github.com/Supreethakharvi99",
-  status: "16/30 Completed",
+  status: "17/30 Completed",
 },
   {
     title: "AI Chat Assistant",
     description:
       "A modern AI-powered Q&A web application where users can ask questions and receive intelligent responses instantly. Built with responsive chat UI, API integration, and loading states.",
-    tech: ["React", "Tailwind CSS", "REST API", "Vite"],
+    tech: ["React", "Tailwind CSS", "MongoDB", "Express", "Node.js"],
     github: "https://github.com/Supreethakharvi99",
     status: "In Progress",
   },
